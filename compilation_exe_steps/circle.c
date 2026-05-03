@@ -1,4 +1,7 @@
 #include<stdio.h>
+
+// Find  the area of circle and circumference
+
 int main()
 {
 	float radius;
