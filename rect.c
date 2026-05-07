@@ -7,6 +7,6 @@ int main()
         printf("Enter the breadth: ");
 	scanf("%f", &breadth);
 	printf("Area of rectangle:%f\n", length*breadth);
-        printf("Perimeter of rectangle:%f\n", 2*length*breadth);	
+        printf("Perimeter of rectangle:%f\n", 2*(length+breadth));	
 }	
 
