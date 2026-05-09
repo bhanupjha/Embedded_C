@@ -7,4 +7,5 @@ int main()
 	printf("Your Entered character is: %c\n", a);
 	printf("Entered character %c ASCII Value is: %d\n", a, a); 
 
+
 }
