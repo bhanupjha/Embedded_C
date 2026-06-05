@@ -8,7 +8,13 @@ int main()
 	printf("Enter the number: ");
 	scanf("%d", &number);
 	s = sqrt(number);
-
+	
+	if(number==1)
+	{
+		printf("%d is not a prime\n", number);
+	}
+	else
+	{
 	for(i=2; i<=s; i++)
 	{
 		if(number%i==0)
@@ -24,6 +30,6 @@ int main()
 	{
 		printf("%d is not a prime number\n", number);
 	}
-	
+	}
 	
 }
