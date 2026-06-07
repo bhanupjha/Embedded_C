@@ -2,13 +2,13 @@
 
 int main()
 {
-	int n, i, j, s;
-	printf("Enter the no.of lines you want to print pattern: ");
+	int i, j, s, n;
+	printf("Enter the no.of lines: ");
 	scanf("%d", &n);
-	
-	for(i=1;i<=n;i++)
+
+	for(i=1; i<=n; i++)
 	{
-		for(s=n-i; s>0; s--)
+		for(s=n-i; s>=1; s--)
 		{
 			printf(" ");
 		}
@@ -18,5 +18,4 @@ int main()
 		}
 		printf("\n");
 	}
-
 }
