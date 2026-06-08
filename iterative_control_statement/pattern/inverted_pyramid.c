@@ -8,13 +8,13 @@ int main()
 
 	for(i=1; i<=n; i++)
 	{
-		for(s=i-1; s>=1; s--)
+		for(s=1; s<=i-1; s++)
 		{
-			print(" ");
-		}	
-		for(j=n; j>=2*i-1; j--)
+			printf(" ");
+		}
+		for(j=1; j<=2*(n-i)+1; j++)
 		{
-			print("*");
+			printf("*");
 		}
 		printf("\n");
 	}
