@@ -18,8 +18,8 @@ int main()
                 scanf("%d", &op2);
 		printf("a. Addition\ns. Subtraction\nm. Multiplication\nd. Division\np. Modulous\ne. Exit\n");
 		printf("Enter the choice: ");
-		__fpurge(stdin);
                 scanf(" %c", &choice);
+		__fpurge(stdin);
 		switch(choice)
 		{
 			case 'a': printf("%d + %d = %d\n", op1, op2, add(op1, op2));
