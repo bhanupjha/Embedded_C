@@ -31,7 +31,7 @@ void print(int * p, int a)
 int secondlowest(int * p, int a)
 {
 	int lowest=p[0];
-	int second_lowest=100;
+	int second_lowest=p[a-1];
 	for(int i=1; i<a; i++)
 	{
 		if(p[i]<lowest)
