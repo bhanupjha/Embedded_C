@@ -9,7 +9,7 @@ int main()
 	scanf("%d", &elements);
 	input(arr, elements);
 	print(arr, elements);
-	printf("Enter the times for rotating in left: ");
+	printf("Enter the times for rotating in right: ");
         scanf("%d", &shift);
 	rotate(arr, elements, shift);
 	print(arr, elements);
@@ -26,14 +26,14 @@ void input(int *a, int n)
 
 void rotate(int *a, int n, int shift)
 {
-	for(int j=0; j<shift; j++)
+	for(int j=shift; j>0; j--)
 	{
-		int temp= a[0];
-		for(int i=1; i<n; i++)
+		int temp= a[n-1];
+		for(int i=n-1; i>=0; i--)
 		{
-			a[i-1]=a[i];
+			a[i]=a[i-1];
 		}
-		a[n-1]=temp;
+		a[0]=temp;
 	}
 }
 
