@@ -33,24 +33,25 @@ void print(int *p, int n)
 
 void repeat(int *p, int n)
 {
-	int cnt, i, j;
+	int i, j;
 	for(i=0; i<n; i++)
 	{
-		cnt=1;
-		for(j=0; j<n; j++)
+		int cnt=1;
+		for(j=i+1; j<n; j++)
 		{
 			if(p[i]==p[j])
 			{
-				cnt++
+				cnt++;
 				for(int k=j; k<n; k++)
 				{
-					p[k]=p
+					p[k]=p[k+1];
 				}
+				n--;
 			}
 		}
 		if(cnt>1)
 		{
-                	printf("%d ", p[i]);
+			printf("%d ", p[i]);
 		}
 	}
 	printf("\n");
