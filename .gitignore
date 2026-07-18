@@ -1,0 +1,11 @@
+# 1. Block absolutely everything by default
+*
+
+# 2. Allow Git to look inside subfolders
+!*/
+
+# 3. Explicitly allow ONLY your C source files
+!*.c
+
+# 4. Keep this gitignore file tracked
+!.gitignore
