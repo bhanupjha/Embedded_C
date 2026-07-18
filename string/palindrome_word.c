@@ -1,7 +1,7 @@
 //count no.of palindrome words in given string
 #include<stdio.h>
 #include<string.h>
-int check_palindrome(char *);
+char* check_palindrome(char *);
 int main()
 {
 	char str[]="madam teaches radar subject";
@@ -17,17 +17,24 @@ int main()
 			count++;
 		}
 	}
+	printf("No.of palindrome words in string: %d\n", count);
 }
 
-int check_palindrome(char *str)
+char* check_palindrome(char *p)
 {
-	static char temp[50];
-	strcpy(temp, str);
+	static char str[50];
+	strcpy(str, p);
+	char ch;
 	char *start, *end, t;
+	start=str;
 	end=str+strlen(str)-1;
 	while(start<end)
 	{
-		strcpy(t, str);	
+		ch= *start;
+		*start=*end;
+		*end=ch;		
+		start++;
+		end--;
 	}
-	return temp;
+	return str;
 }
