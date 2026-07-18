@@ -11,7 +11,7 @@ int main()
 	while(t)
 	{
 		rem= t%10;
-		if(rem<high)
+		if(rem<=high)
 		{
 			high=rem;
 		}
@@ -29,7 +29,7 @@ int main()
 	while(g)
         {
                 rem= g%10;
-                if(rem>low)
+                if(rem>=low)
                 {
                         low=rem;
                 }
