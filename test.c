@@ -1,11 +1,7 @@
-#include<stdio.h>
-int x=5;
-void print()
+int main()
 {
-	printf("%d", x--);
-}
-
-main()
-{
-	print();
+        int x=10;
+        static int a=10+5;
+        printf("%d",x);
+        printf("%d",a);
 }
