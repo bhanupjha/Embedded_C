@@ -28,6 +28,7 @@ int main()
 /*	memcpy(s2.name, prd.name, sizeof(prd.name));
 	memcpy(s2.qty, prd.qty, sizeof(prd.qty));
 	memcpy(s2.mrp, prd.mrp, sizeof(prd.mrp));
+
 	// array name -> automatically gives address of first element
 	// normal variable -> use &(ampersand) to get addr
 //	memcpy(s2.unit, prd.unit, sizeof(prd.unit));// -> segmentation fault try to derefrence 1
