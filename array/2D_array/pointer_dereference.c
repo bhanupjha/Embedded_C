@@ -10,6 +10,6 @@ int main()
 	printf("Value at p[0]: %d\n", p[0]); // it gives value at p[0]
 	// q[0] index
         printf("Value at q[0]: %p\n", q[0]);// it gives address of q[0]
-	printf("Value at *q[0]: %d\n", *q[0]); // double derefrencing gives the value
+	printf("Value at *q[0]: %d\n", *q[0]); // single derefrencing gives the value
 	printf("Value at **q: %d\n", **q); // double derefrencing gives the value
 }
