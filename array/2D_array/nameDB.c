@@ -92,18 +92,17 @@ void Delete(char (*p)[COL])
 void Sort(char (*p)[COL])
 {
 	char temp[COL];
-	for(int i=1; i<cnt; i++)
+	for(int i=0; i<cnt; i++)
 	{
-		for(int j=0; j<cnt-i; j++)
+		for(int j=0; j<cnt; j++)
 		{
-			int t;
-			if(t=(strcmp(p[j], p[j+1])))
+			if(strcmp(p[j], p[j+1])>0)
 			{
-				printf("%d\n", t);
-			/*	strcpy(temp, p[j]);
+				strcpy(temp, p[j]);
 				strcpy(p[j], p[j+1]);
-				strcpy(p[j], temp);*/
+				strcpy(p[j+1], temp);
 			}
 		}
 	}
 }
+
