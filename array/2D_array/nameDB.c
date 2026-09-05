@@ -49,7 +49,8 @@ void Insert(char (*p)[COL])
 	else
 	{
 		printf("Enter the name to be inserted:\n");
-		scanf("%s", p[cnt]);
+		__fpurge(stdin);
+		scanf("%[^\n]s", p[cnt]);
 		cnt++;
 	}
 }
@@ -92,9 +93,9 @@ void Delete(char (*p)[COL])
 void Sort(char (*p)[COL])
 {
 	char temp[COL];
-	for(int i=0; i<cnt; i++)
+	for(int i=0; i<cnt-1; i++)
 	{
-		for(int j=0; j<cnt; j++)
+		for(int j=0; j<cnt-i-1; j++)
 		{
 			if(strcmp(p[j], p[j+1])>0)
 			{
